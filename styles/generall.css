@@ -1,0 +1,13 @@
+*{
+    padding: 0px ;
+    margin: 0px ;
+    box-sizing: border-box;
+    color: white ;
+    transition: 0.15s ease;
+    font-family: roboto, arial;
+}
+
+body{
+    background-color: black ;
+    padding-top: 8rem ;
+}

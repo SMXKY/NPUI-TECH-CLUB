@@ -1,0 +1,93 @@
+.call-to-action{
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    position: relative;
+}
+
+.join-us{
+    padding-left: 2.5rem ;
+}
+
+.main-text{
+    font-weight: 600 ;
+    font-size: 8rem ;
+}
+
+.text1, .text2, .text3{
+    font-size: 16px ;
+    font-weight: 500 ;
+    width: 28rem ;
+    margin-bottom: 1rem ;
+    line-height: 25px ;
+}
+
+.carousel-container{
+    width: 40vw ;
+    margin: auto ;
+}
+
+.carousel-slide{
+    display: flex ;
+    flex-direction: column ;
+    width: 100% ;
+    height: 500px ;
+    overflow: hidden ;
+    transition: 0.5s ease-in-out;
+}
+
+.carousel-slide img{
+    margin-bottom: 4px ;
+    object-fit: cover ;
+}
+
+@media(max-width: 1030px){
+    .call-to-action{
+        display: grid ;
+        grid-template-columns: 1fr ;
+        position: relative;
+    }
+
+    .main-text{
+        font-size: 4rem ;
+    }
+
+    .text1, .text2, .text3{
+        font-size: 14px ;
+        font-weight: 500 ;
+        width: 19rem ;
+        margin-bottom: 1rem ;
+        line-height: 25px ;
+    }
+
+    .carousel-slide img{
+        width: 100vw ;
+        height: 100% ;
+        object-fit: cover ;
+    }
+
+    .carousel-slide{
+        height: 100% ;
+    }
+
+    .carousel-container{
+        width: 100% ;
+        display: flex ;
+        justify-content: center ;
+        position: absolute ;
+        top: 0px ;
+        left: 0px ;
+        right: 0px ;
+        bottom: 0px ;
+        z-index: -1 ;
+        margin: 0px ;
+    }
+
+    .join-us{
+        background-color: rgba(0, 0, 0, 0.337) ;
+        padding-bottom: 1.6rem ;
+        height: 100% ;
+        width: 100% ;
+        backdrop-filter: blur(1.5px) ;
+    }
+}
+

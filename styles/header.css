@@ -1,0 +1,146 @@
+.header{
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    position: fixed ;
+    top: 0px ;
+    left: 0px ;
+    right: 0px ;
+    padding: 0.75rem 2.5rem ;
+    align-items: center ;
+    background-color: rgba(0, 0, 0, 0.326) ;
+    padding-bottom: 0.5rem ;
+    backdrop-filter: blur(10px) ;
+    z-index: 200 ;
+}
+
+.logo-img{
+    width: 2.2rem ;
+    cursor: pointer ;
+    margin-right: 0.5rem ;
+}
+
+.mid-header a{
+    display: inline ;
+    text-decoration: none ;
+    margin-right: 2.5rem ;
+    font-size: 14px ;
+    font-weight: 500 ;
+}
+
+.mid-header a:hover, .join-btn-div a:hover{
+    opacity: 0.9 ;
+}
+
+.join-btn{
+    padding: 1.1rem 3.76rem ;
+    background-color: white ;
+    border: none ;
+    cursor: pointer ;
+    font-size: 18px ;
+    color: black 
+}
+
+.join-btn:hover{
+    opacity: 0.9 ;
+}
+
+.join-btn-div{
+    display: flex ;
+    align-items: center ;
+}
+
+.join-btn-div a{
+    font-size: 14px ;
+    margin-right: 2.5rem ;
+    font-weight: 500 ;
+    text-decoration: none ;
+    padding-bottom: 2px ;
+}
+
+.logo-text{
+    font-size: 1.2rem ;
+    font-weight: 500 ;
+    cursor: pointer ;
+}
+
+.logo-container{
+    display: flex ;
+    align-items: center ;
+}
+
+.hamburger{
+    display: none ;
+    cursor: pointer ;
+}
+
+.bar{
+    display: block ;
+    width: 25px ;
+    height: 3px ;
+    margin: 5px auto ;
+    -webkit-transition: all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out ;
+    background-color: white ;
+}
+
+@media(max-width: 988px){
+    .header{
+        padding: 1.65rem 2rem ;
+        width: 100vw ;
+        top: 0px ;
+        left: 0px ;
+        right: 0px ;
+    }
+
+    .hamburger{
+        display: block ;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0 ;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg) ;
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg) ;
+    }
+
+    .mid-header,  .join-btn-div{
+        position: fixed ;
+        left: -100% ;
+        top: 88px ;
+        gap: 0 ;
+        flex-direction: column ;
+        background-color: black ;
+        width: 100% ;
+        text-align: center ;
+        transition: 0.3s ;
+        z-index: -100 ;
+        backdrop-filter: blur(10px) ;
+        background-color: rgba(0, 0, 0, 0.326) ;
+    }
+
+    .join-btn-div{
+        top: 10rem ;
+        flex-direction: column ;
+        justify-content: center ;
+        display: none ;
+    }
+
+    .mid-header{
+        display: flex ;
+        flex-direction: column ;
+    }
+
+    .mid-header a{
+        margin: 4px 0 ;
+    }
+
+    .mid-header.active, .join-btn-div.active{
+        left: 0 ;
+    }
+}

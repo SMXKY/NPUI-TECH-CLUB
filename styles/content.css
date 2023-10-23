@@ -1,0 +1,128 @@
+.see-applicants{
+    display: flex ;
+    justify-content: center ;
+    margin-top: 4rem ;
+    flex-direction: column ;
+    padding-left: 2.5rem ;
+}
+
+.content{
+    display: flex ;
+    justify-content: center ;
+}
+
+.content-div{
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.244) ;
+    padding: 1rem ;
+    border-radius: 4px ;
+}
+
+.see-applicants-header button{
+    padding: 1.1rem 8rem ;
+    background-color: white ;
+    border: none ;
+    cursor: pointer ;
+    font-size: 18px ;
+    color: black 
+}
+
+.see-applicants-header{
+    margin-bottom: 1rem ;
+    display: flex ;
+}
+
+.see-applicants-header button:hover{
+    opacity: 0.9 ;
+}
+
+.content-header, .content-body{
+    display: grid ;
+    grid-template-columns: 1fr 110px 110px 200px ;
+    row-gap: 1rem ;
+    column-gap: 8px ;
+    align-items: center ;
+}
+
+.content-header{
+    margin-bottom: 1rem ;
+}
+
+.content-header p{
+    font-weight: 500 ;
+    font-size: 18px ;
+}
+
+.on-button1, .on-button2{
+    height: 0.4rem ;
+    width: 40% ;
+    position: absolute ;
+    background-color: black ;
+    border-radius: 4px ;
+    bottom: 1px ;
+    opacity: 0 ;
+}
+
+.button1{
+    border-right: solid black 0.15px ;
+}
+
+.button-div{
+    position: relative ;
+    display: flex ;
+    justify-content: center ;
+}
+
+.on-opacity{
+    opacity: 1 ;
+}
+
+.blue{
+    padding: 1rem 4rem ;
+    background-color: rgb(223, 23, 23) ;
+    cursor: pointer ;
+}
+
+.green{
+    padding: 1rem 4rem ;
+    background-color: rgb(32, 207, 44) ;
+    cursor: pointer ;
+}
+
+.applications-head{
+    width: 20rem ;
+}
+
+@media(max-width: 746px ){
+    .see-applicants-header button{
+        padding: 2.5vw 15vw ;
+    } 
+
+    .blue, .green{
+        padding: 1.8vw 3vw ;
+    }
+
+    .content-header, .content-body{
+        display: grid ;
+        grid-template-columns: 1fr 80px 80px 100px ;
+        row-gap: 1rem ;
+        column-gap: 2px ;
+        align-items: center ;
+    }
+
+    .see-applicants{
+        padding-left: 0rem ;
+    }
+
+    .content-div{
+        padding: 8px ;
+    }
+
+    .content-body p{
+        font-size: 13.5px;
+    }
+
+    .content{
+        padding: 0px ;
+        width: 100vw ;
+    }
+}
